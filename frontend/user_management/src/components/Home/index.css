@@ -1,0 +1,176 @@
+/* Global reset and base styles */
+* {
+    background-color: rgb(199, 198, 198);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "roboto";
+  }
+  
+  /* Main container styles */
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    width: 100%;
+  }
+ 
+  /* Heading styles */
+  .main-heading {
+    color: black;
+  }
+  .main-heading:hover {
+    color: aqua;
+    filter: drop-shadow(0 0 2em #646cffaa);
+  }
+  
+  /* Button styles */
+  .add-btn {
+    width: 100px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .add-btn:hover {
+    filter: drop-shadow(0 0 2em #646cffaa);
+    background-color: white;
+    color: black;
+    font-weight: bold;
+  }
+  
+  /* Table container: enables scrolling when needed */
+  .table-container {
+    width: 80%;
+  }
+  
+  /* Table styles */
+  .main_table {
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  .info_table {
+    color: rgb(17, 17, 56);
+    font-family: "roboto", sans-serif;
+  }
+  
+  /* Table header cell styles */
+  th , td{
+    padding: 10px;
+    color: black;
+    text-align: center;
+    border: 1px solid black;
+    white-space: nowrap;
+    border-radius: 10px;
+    background-color: #ddd;
+  }
+  
+  /* Column classes */
+  .id {
+    width: 10%;
+  }
+  .first_name {
+    width: 15%;
+  }
+  .last_name {
+    width: 15%;
+  }
+  .email {
+    width: 20%;
+  }
+  .department {
+    width: 10%;
+  }
+  .operations {
+    width: 30%;
+    
+    gap: 10px;
+  }
+  .operation-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    border-radius: 5px;
+    background-color: #ddd;
+  }
+  /* Button styles in table */
+  .edit-btn {
+    width: 150px;
+    padding: 10px;
+  }
+  .edit-btn:hover{
+    background-color: rgb(201, 201, 139);
+    filter: drop-shadow(0 0 2em #646cffaa);
+    color: black;
+    font-weight: bold;
+  }
+  .delete-btn {
+    width: 200px;
+    padding: 10px;
+  }
+  .delete-btn:hover{
+    background-color: rgb(186, 49, 49);
+    filter: drop-shadow(0 0 2em #646cffaa);
+    color: black;
+    font-weight: bold;
+  }
+  /* RESPONSIVE STYLES */
+  
+  /* Medium devices (tablets, max-width: 768px) */
+  @media screen and (max-width: 768px) {
+    .main-container {
+      align-items: center;
+      padding: 10px;
+    }
+    .table-container {
+      width: 100%;
+      overflow-x: auto;
+    }
+    th, td {
+      padding: 8px;
+      font-size: 14px;
+    }
+    .operations {
+      flex-direction: column;
+      width: auto;
+    }
+    .edit-btn, .delete-btn {
+      width: 100%;
+    }
+  }
+  
+  /* Small and extra-small devices (phones, max-width: 480px) */
+  @media screen and (max-width: 480px) {
+    .main-heading {
+      font-size: 20px;
+    }
+    th, td {
+      padding: 6px;
+      font-size: 12px;
+    }
+    .add-btn {
+      width: 80px;
+    }
+    .table-container {
+      white-space: nowrap;
+      width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch; 
+    }
+  }
+
+.pagination-container{
+  display: flex;
+  flex-direction: row;
+  overflow: auto;
+  justify-content: center;
+  padding-left: 40px;
+  padding-right: 40px;
+  width: 200px;
+  gap: 2px;
+}
+button:hover{
+  filter: drop-shadow(0 0 2em #646cffaa);
+}

@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    width: 100%;/* ✅ Prevents unwanted spacing issues */
+}
+
+
+.main-container {
+        color: black;
+        font-family: "Roboto", sans-serif;
+        text-align: center; /* ✅ Centers horizontally */
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* ✅ Centers horizontally in flex */
+        align-items: center; /* ✅ Centers vertically in flex */
+        height: 10vh; /* Adjust height as needed */
+        width: 100%; /* Ensures full width */
+    }
+
+
+.maim-heading {
+   .main-container {
+    color: black;
+    font-family: "Roboto", sans-serif;
+    text-align: center; /* ✅ Centers horizontally */
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center; /* ✅ Centers horizontally in flex */
+    align-items: center; /* ✅ Centers vertically in flex */
+    height: 10vh; /* Adjust height as needed */
+    width: 100%; /* Ensures full width */
+}
+}
+h1:hover{
+    color: rgb(53, 91, 76);
+}
+.form-container{
+    width: 60%;
+}
+.input-element{
+    height: 40px;
+    padding-left: 10px;
+    border-radius: 10px;
+    background-color: black;
+}
+.input-element:hover{
+    color: white;
+    background-color: rgb(60, 58, 58);
+    filter: drop-shadow(0 0 2em #f6f6f8aa);
+}
+
+.onsubmit{
+    width: 100px;
+    
+    color: white;
+    background-color: black;
+    font-family: "roboto";
+    font-weight: bold;
+    margin-top: 20px;
+}
+.onsubmit:hover{
+    background-color: green;
+    color: white;
+    filter: drop-shadow(0 0 2em #646cffaa);
+}
